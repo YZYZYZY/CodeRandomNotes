@@ -4,7 +4,7 @@ using namespace stl;
 
 int main()
 {
-    Array<int, 10> a;
+    Array<int, 10> a; //就是想说这里这个数组a是怎么和类的私有成员变量在地址的角度对上的？m_data只是a这个对象内存中的一部分
 
     a.fill(1);
     a.show();

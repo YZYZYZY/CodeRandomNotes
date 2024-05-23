@@ -41,6 +41,7 @@ namespace stl
         T &at(int index);
         const T &at(int index) const;
 
+        //访问元素
         T &operator[](int index);
         const T &operator[](int index) const;
 
@@ -57,7 +58,7 @@ namespace stl
         reverse_iterator rend();
 
     private:         // 只能被类的自身的函数访问
-        T m_data[N]; // 所以就是对内置数组的类封装
+        T m_data[N]; // 所以就是对内置数组的类封装 这里并没有实际分配空间？是通过什么来知道具体空间的？
     };
 
 #include "array.inl"
